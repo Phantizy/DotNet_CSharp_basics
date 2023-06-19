@@ -21,3 +21,29 @@ if(isLoggedIn && isEmailVerified && cardInfo)
     Console.WriteLine("Allowed to make a purchase");
 else
     Console.WriteLine("Stop purchase");
+
+int[] marks = new int[5] {45,50,55,60,75};
+
+foreach (int mark in marks)
+    Console.WriteLine(mark);
+
+for (int i=0; i < marks.Length; i++)
+    Console.WriteLine(marks[0]);
+
+int[,] multiArray = new int[3,4]
+    {{1,2,3,4},{1,2,3,4},{1,2,3,4}};
+
+for (int i=0;i <=2;i++)
+{
+    for(int j =0; j <=3; j++)
+    {
+        Console.WriteLine(multiArray[i,j] + "\t");
+    }
+    Console.WriteLine();
+}
+
+Console.WriteLine();
+
+int[][] jaggedArray = new int[2][];
+jaggedArray[0] = new int[2];
+jaggedArray[1] = new int[3];
